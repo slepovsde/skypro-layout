@@ -1,0 +1,709 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+    @font-face {
+        font-family: StratosSkyeng;
+        src: url(assets/fonts/stratosskyengweb-light.woff2) format("woff2");
+        font-weight: 300;
+        font-style: normal;
+        font-display: fallback;
+      }
+      @font-face {
+        font-family: StratosSkyeng;
+        src: url(assets/fonts/stratosskyengweb-regular.woff2) format("woff2");
+        font-weight: 400;
+        font-style: normal;
+        font-display: fallback;
+      }
+      @font-face{
+        font-family: StratosSkyeng;
+        src: url(assets/fonts/stratosskyengweb-bold.woff2) format("woff2");
+        font-weight: 700;
+        font-style: normal;
+        font-display:fallback;
+      }
+
+.page {
+    font-family: StratosSkyeng;
+    min-width: 1440px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+.wrap {
+    width: 100%;
+    display: block;
+    background: #271A58;
+}
+
+.content {
+   
+    display: flex;
+    margin: auto;
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}   
+
+.menu-content {
+    width: 1160px;
+    margin: 10px auto;
+}
+
+.menu {
+    text-align: center;
+    background: #271A58;
+    max-height: 80px;
+    width: 100%;
+    display: inline-block;
+}
+
+.logo {
+    margin-left: 140px;
+    margin: 10px;
+    float: left;
+    width: 140px;
+    height: 40px;
+    display: inline;
+}
+
+.navigation {
+    display: inline;
+}
+
+.button {
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 400;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 32px;
+    position: relative;
+    vertical-align: top; 
+    display: inline;
+    width: 120px;
+    height: 40px;
+}
+
+.button-link {
+    margin: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 400;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 32px;
+    position: relative;
+    vertical-align: top; 
+    display: inline;
+    width: 120px;
+    height: 40px;
+}
+
+.active {
+    color: #F9F9F9;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 400;
+    background-color: #AD61FF;
+    border: 1px solid transparent;
+    border-radius: 32px;
+    width: 120px;
+    height: 40px;
+    padding: 5px;
+}
+
+.account {
+    display: inline;
+}
+
+.login {
+    text-decoration: none;
+    padding: 7px;
+    float: right;
+    display: inline;
+    width: 73px;
+    height: 36px;
+    border-radius: 6px;
+    background-color: #F9F9F9;
+    font-size: 16px;
+    line-height: 24px;
+    color:#868D92;
+}
+
+.title-wrap {
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.content_title {
+    display: inline-block;
+    background: #271A58;
+    width: 100%;
+    height: 100%;
+}
+
+.university {
+    display: block;
+    width: 473px;
+    height: 60px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #fff;
+    opacity: 50%;
+}
+
+.new_prof {
+    position: relative;
+    margin-bottom: 0;
+    padding: 0;
+    width: 1160px;
+    height: 72px;
+    font-size: 72px;
+    line-height: 58px;
+    font-weight: 400;
+    color: #fff;
+    display: block;
+}
+
+.change_logo {
+    width: 250px;
+    height: 150px;
+    display: inline;
+    margin-top: 55px;
+    margin-right: -50px;
+    float: right;
+}
+
+.change_logo img {
+    vertical-align: top;
+    float: right;
+    display: inline;
+    width: 250px;
+    height: 150px;
+}
+
+.cards {
+    display: flex;
+    margin: auto;
+    position: relative;
+    justify-content: center;
+    width: 100%;
+    background: #271A58;
+}
+
+.card {
+    display: inline-block;
+    width: 360px;
+    height: 480px;
+    margin: 20px;
+}
+
+.card img {
+    display: inline;
+    border-radius: 30px;
+    position: absolute;
+    display: inline-block;
+    width: 360px;
+    height: 480px;
+}
+
+.card_prof {
+    width: 290px;
+    height: 30px;
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: 400;
+    display: inline;
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 40px;
+}
+
+.card_descr {
+    width: 290px;
+    height: 120px;
+    font-size: 40px;
+    line-height: 44px;
+    font-weight: 400;
+    position: absolute;
+    display: inline;
+    margin-top: 60px;
+    margin-left: 30px;
+    margin-right: 40px;
+}
+
+.card_link  { 
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: 400;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    width: 210px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 80px;
+    margin-top: 410px;
+    margin-right: 130px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    padding: 8px;
+}
+
+.link {
+    padding: 5px;
+    text-decoration: none;
+    color: #FF8071;
+}
+
+.all-courses-button {
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.all_course {
+    display: inline-block;
+    font-size: 28px;
+    line-height: 25px;
+    width: 220px;
+    height: 60px;
+    background-color: #FF8071;
+    border-radius: 30px;
+    margin-top: 60px;
+    margin-bottom: 41px;
+    color: #fff;
+    border: transparent;
+}
+
+.not_a_credit {
+    width: 100%;
+    height: 500px;
+    background: #AD61FF;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+}
+
+.credit_title {
+    margin-top: 100px;
+    margin-left: 140px;
+    margin-bottom: 0;
+    width: 821px;
+    height: 500px;
+    padding: 0;
+    display: inline;
+    font-size: 40px;
+    line-height: 46px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.black_text {
+    color: black;
+}
+
+.pay {
+    position: absolute;
+    text-align: left;
+    width: 672px;
+    height: 99px;
+    font-size: 26px;
+    line-height: 32px;
+    font-weight: 400;
+    color: #ffffff;
+    margin-right: 320px;
+    display: inline;
+}
+
+.credit_logo {
+    width: 250px;
+    height: 150px;
+    display: inline;
+    margin-top: 55px;
+    margin-right: 60px;
+    float: right;
+}
+
+.credit_logo img {
+    width: 260px;
+    height: 260px;
+    margin-left: 100px;
+}
+
+.aboutISA {
+    position: absolute;
+    display: inline-block;
+    font-size: 28px;
+    line-height: 25px;
+    width: 260px;
+    height: 60px;
+    background-color: #FF8071;
+    color: #fff;
+    border-radius: 30px;
+    margin-right: 700px;
+    margin-top: 364px;
+    margin-bottom: 59px;
+    border: transparent;
+}
+
+.tickets {
+    padding: 30px;
+    display: block;
+    width: 1160px;
+    height: 100%;
+    margin: auto;
+}
+
+.block-title {
+    text-align: left;
+    width: 640px;
+    height: 60px;
+    font-size: 60px;
+    font-weight: 400;
+    margin-left: 140px;
+  }
+
+.vebinar-block:first-child {
+    margin-top: 46px;
+  }
+
+.vebinar-block {
+    box-sizing: border-box;
+    min-width: 844px;
+    margin-top: 40px;
+    padding: 40px;
+    border-radius: 30px;
+    background: #D8D7FF; 
+}
+
+.vebinar-block-wrapper {
+    position: relative;
+}
+
+.vebinar-block-info {
+    float: left;
+    width: 240px;
+}
+
+.vebinar-block-details {
+    margin-left: 240px;
+}
+
+.vebinar-block-date-number {
+    font-size: 48px;
+    line-height: 65px;
+    letter-spacing: -0.13px;
+}
+
+.vebinar-block-date-month {
+    display: inline-block;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.vebinar-block-profession {
+    position: absolute;
+    color: #D8D7FF;
+    bottom: 0px;
+}
+
+.vebinar-block-title {
+    font-size: 40px;
+    line-height: 44px;
+    font-weight: 400;
+    margin-bottom: 29px;
+}
+
+.vebinar-block-time, .vebinar-block-speakers {
+    font-size: 20px;
+    line-height: 27px;
+}
+
+.vebinar-block-speakers {
+    width: 50%;
+    margin-top: 8px;
+}
+
+.vebinar-block-button {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 335px;
+    height: 60px;
+    padding: 18px 50px;
+    font-size: 28px;
+    line-height: 25px;
+    color: #565EEF;
+    border-radius: 30px;
+    border: none;
+    background-color: #fff;
+}
+
+.vebinar-block-wrapper::before, .vebinar-block-wrapper::after {
+    position: absolute;
+    left: 220px;
+    width: 40px;
+    height: 40px;
+    content: '';
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.vebinar-block-wrapper::before {
+    top: -60px;
+}
+
+.vebinar-block-wrapper::after {
+    bottom: -60px;
+}
+
+
+.vebinar-block_blue {
+    margin-top: 40px;
+    height: 420px;
+    color: white;
+    background: #565EEF;
+    border-radius: 30px;
+}
+
+.vebinar-blue-date-number {
+    width: 48px;
+    height: 65px;
+    display: inline;
+    margin-top: 37px;
+    margin-left: 33px;
+    font-size: 48px;
+    line-height: 65px;
+    letter-spacing: -0.13px;
+}
+
+.vebinar-blue-date-month {
+    width: 126px;
+    height: 48px;
+    display: inline-block;
+    margin-top: 44px;
+    margin-left: 11px;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.vebinar-blue-title {
+    width: 575px;
+    height: 150px;
+    font-size: 40px;
+    line-height: 44px;
+    margin-top: 12px;
+    margin-left: 33px;
+    margin-bottom: 0;
+    display: block;
+}
+
+.vebinar-blue-time {
+    display: block;
+    width: 200px;
+    height: 27px;
+    margin-left: 33px;
+    margin-top: 10px;
+    font-size: 20px;
+    line-height: 27px;
+}
+
+.vebinar-blue-speakers {
+    display: block;
+    width: 530px;
+    height: 70px;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: 0.05px;
+    margin-left: 33px;
+    margin-top: 15px;
+}
+
+.vebinar-blue-button {
+    position: relative;
+    bottom: 80px;
+    margin-left: 720px;
+    width: 335px;
+    height: 60px;
+    padding: 18px 50px;
+    font-size: 28px;
+    line-height: 25px;
+    color: #565EEF;
+    border-radius: 30px;
+    border: none;
+    background-color: #fff;
+}
+
+.block4 h3 {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 44px;
+    letter-spacing: -0.3px;
+    color: #AD61FF;
+}
+
+.block4 p {
+    color: #271A58;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 44px;
+    letter-spacing: -0.3px;
+}
+
+.block4 {
+    padding: 60px 140px 100px 140px;
+    background-color: #E6E6F6;
+}
+
+.upper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 100px;
+    row-gap: 60px;
+    column-gap: 40px;
+}
+
+.prof {
+    grid-row: 1/2;
+}
+
+.photo1 {
+    grid-row: 1/3;
+}
+
+.photo2 {
+    grid-column: 1/2;
+    grid-row: 2/4;
+}
+
+.employment {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+
+.block4_2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 80px;
+    row-gap: 60px;
+    column-gap: 40px;
+}
+
+.analytics {
+    grid-row: 1/2;
+}
+
+.photo3 {  
+    grid-row: 1/3;
+}
+
+.photo4 { 
+    grid-column: 1/2;
+    grid-row: 2/4;
+    align-self: end;
+}
+
+.educational_materials {
+    grid-column: 2/3;
+    grid-row: 3/4;
+
+}
+
+.block4_3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+}
+
+.credit {
+    grid-row: 1/2;
+}
+
+.photo5 {   
+    grid-row: 1/3;
+}
+
+.reviews {
+    width: 100%;
+    background: #271A58;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.review-title {
+    font-size: 60px;
+    line-height: 54px;
+    color: #fff;
+    margin-top: 30px;
+    margin-left: 60px;
+    margin-bottom: 30px;
+}
+
+.feedback {
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+    overflow: auto;
+    
+}
+
+.feedback_block {
+    display: inline-block;   
+    width: 360px;
+    height: 400px;
+    min-width: 360px;
+    padding: 30px 40px 30px 30px;
+    margin: 0 20px;
+    background: #35256E;
+    border-radius: 30px;    
+}
+
+.feedback_text {
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: -0.05px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: rgba(224, 223, 255, 0.8);
+}
+
+.feedback_photo {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 40px;
+    border-radius: 16px;
+}
+
+.feedback_name {
+    width: 140px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 40px;
+    margin-left: 20px;
+    font-size: 14px;
+    line-height: 110%;
+    color: #fff;
+}
+
+.course-wave {
+    color: rgba(224, 223, 255, 0.8);
+} 
