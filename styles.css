@@ -1,0 +1,1829 @@
+/*********************** FONTS ***********************/
+
+@font-face {
+    font-family: StratosSkyeng;
+    src: url(./font/stratosskyengweb-regular.woff2) format("woff2");
+    font-style: normal;
+    font-weight: 400;
+    font-display: fallback;
+}
+
+/*********************** GENERAL ***********************/
+
+:root {
+    --main-color: #271a58;
+    --main-highlight-color: #ad61ff;
+    --main-button-color: #ff8071;
+    --main-button-color-mobile: #99d100;
+    --webinars-item-2-bg-color: #565eef;
+    --color-1: var(--main-button-color);
+    --color-2: var(--main-highlight-color);
+    --color-3: var(--webinars-item-2-bg-color);
+}
+
+.body {
+    margin: 0;
+    padding: 0;
+
+    font-family: StratosSkyeng, Arial, sans-serif;
+    font-size: 20px;
+    line-height: 100%;
+}
+
+.container {
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    padding: 0 20px;
+}
+
+.link {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.section-link {
+    padding: 20px;
+    border-radius: 30px;
+
+    font-size: 28px;
+    line-height: 90%;
+    color: white;
+    background-color: var(--main-button-color);
+}
+
+.section-link:hover {
+    color: var(--main-color);
+    background-color: #ffb2a9;
+}
+
+.section-title {
+    margin: 0 0 46px;
+    padding: 0;
+
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 90%;
+    letter-spacing: -0.7px;
+    color: var(--main-color);
+}
+
+.block-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 110%;
+    letter-spacing: -0.3px;
+}
+
+.sub-title {
+    margin: 0 0 10px;
+    padding: 0;
+
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 115%;
+    letter-spacing: -0.05px;
+}
+
+.sub-title_opacity {
+    opacity: 0.5;
+}
+
+/*********************** HEADER ***********************/
+
+.header {
+    background-color: var(--main-color);
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 20px 0;
+}
+
+.header__logo {
+    align-self: center;
+
+    height: 20px;
+
+    cursor: pointer;
+}
+
+.header__menu {
+    display: flex;
+    justify-content: space-between;
+
+    width: 60%;
+}
+
+.header__menu-checkbox,
+.header__menu-checkbox-label {
+    display: none;
+}
+
+.header__link {
+    padding: 10px;
+    border-radius: 32px;
+
+    color: white;
+}
+
+.header__link:hover {
+    background-color: var(--main-highlight-color);
+    color: white;
+}
+
+.header__login-link {
+    display: inline-block;
+    align-self: center;
+
+    padding: 8px 16px;
+    border-radius: 6px;
+
+    font-size: 16px;
+    color: #868d92;
+    background: #f9f9f9;
+}
+
+/*********************** PROFESSIONS ***********************/
+
+.professions {
+    background-color: var(--main-color);
+}
+
+.professions__content {
+    padding: 20px 0 40px;
+}
+
+.professions__header {
+    position: relative;
+}
+
+.professions__header > .sub-title {
+    margin-bottom: 20px;
+    max-width: 500px;
+
+    color: white;
+}
+
+.professions__title {
+    margin: 0;
+    padding: 0;
+    width: 80%;
+
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 91.5%;
+    letter-spacing: -1.2px;
+    color: #f4f4ff;
+}
+
+.professions__sticker {
+    position: absolute;
+    right: -5%;
+    bottom: -40px;
+    width: 20%;
+}
+
+.professions__sticker-outline {
+    fill: var(--color-1);
+}
+
+.professions__cards-list {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 60px 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.professions__card {
+    width: 31%;
+    height: 480px;
+
+    background-color: white;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.professions__card_bg1 {
+    background-image: url(./images/professions-card-bg1.png);
+}
+
+.professions__card_bg2 {
+    background-image: url(./images/professions-card-bg2.png);
+}
+
+.professions__card_bg3 {
+    background-image: url(./images/professions-card-bg3.png);
+}
+
+/*********************** cards ***********************/
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    padding: 30px;
+    box-sizing: border-box;
+
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.card-topic {
+    align-self: flex-start;
+
+    margin: 0;
+    padding: 10px;
+
+    border-radius: 80px;
+    background: #ffffff;
+}
+
+.card-topic_color1 {
+    color: var(--color-1);
+}
+
+.card-topic_color2 {
+    color: var(--color-2);
+}
+
+.card-topic_color3 {
+    color: var(--color-3);
+}
+
+/*********************** ISA ***********************/
+
+.isa {
+    border-radius: 0 0 32px 32px;
+    background-color: var(--main-highlight-color);
+}
+
+.isa__content {
+    position: relative;
+    padding: 60px 0;
+
+    color: white;
+}
+
+.isa__title {
+    margin-bottom: 25px;
+    line-height: 115%;
+}
+
+.isa__title_colored {
+    display: inline-block;
+    color: var(--main-color);
+}
+
+.isa__description {
+    width: 60%;
+    margin-bottom: 46px;
+
+    font-size: 26px;
+    line-height: 125%;
+}
+
+.isa__sticker {
+    position: absolute;
+    top: 40px;
+    right: 0;
+
+    width: 20%;
+}
+
+.isa__sticker-outline {
+    fill: white;
+}
+
+/*********************** WEBINARS ***********************/
+
+.webinars {
+    padding: 120px 0 48px;
+}
+
+.webinars__item {
+    margin-bottom: 40px;
+    border-radius: 30px;
+}
+
+.webinars__item_v1 {
+    position: relative;
+    display: flex;
+    padding: 40px;
+    background-color: #d8d7ff;
+}
+
+.webinars__item-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-right: 60px;
+}
+
+.webinars__item-date {
+    width: 200px;
+}
+
+.webinars__item-date-number {
+    font-size: 48px;
+}
+
+.webinars__item-date-day {
+    display: inline-block;
+    line-height: 120%;
+}
+
+.webinars__item-profession {
+    margin: 0;
+    padding: 0;
+
+    line-height: 115%;
+    color: var(--color-3);
+}
+
+.webinars__item-title {
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+.webinars__item-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.webinars__item-details {
+    width: 50%;
+}
+
+.webinars__item-time {
+    display: block;
+    margin: 0 0 10px;
+}
+
+.webinars__item-date_mobile {
+    display: none;
+}
+
+.webinars__item-speakers {
+    margin: 0;
+    line-height: 135%;
+}
+
+.webinars__item-link {
+    align-self: flex-end;
+
+    min-width: 300px;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    border-radius: 30px;
+
+    text-align: center;
+    font-size: 28px;
+    letter-spacing: -0.7px;
+    color: #636aed;
+    background-color: white;
+}
+
+.webinars__item-link:hover {
+    color: white;
+    background-color: var(--main-color);
+}
+
+.webinars__border-circle {
+    position: absolute;
+    left: 230px;
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    background-color: white;
+}
+
+.webinars__border-circle_top {
+    top: -20px;
+}
+
+.webinars__border-circle_bottom {
+    bottom: -20px;
+}
+
+.webinars__item_v2 {
+    padding: 35px;
+    margin-bottom: 46px;
+
+    background-color: var(--webinars-item-2-bg-color);
+    background-image: url(./images/webinars-card-v2.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    color: white;
+}
+
+.webinars__item_v2 .webinars__item-title {
+    margin: 48px 0;
+}
+
+.webinars__links {
+    display: flex;
+    align-items: center;
+}
+
+.webinars__telegram-link {
+    display: flex;
+    align-items: center;
+
+    margin-left: 30px;
+}
+
+.webinars__telegram-link:hover .webinars__telegram-logo {
+    fill: var(--main-button-color);
+}
+
+.webinars__telegram-logo {
+    width: 50px;
+    margin-right: 15px;
+
+    border-radius: 12px;
+    background-color: var(--main-color);
+    fill: white;
+}
+
+.webinars__telegram-text {
+    margin: 0;
+
+    font-size: 28px;
+    letter-spacing: -0.7px;
+    color: var(--main-color);
+}
+
+/*********************** SKILLS ***********************/
+
+.skills {
+    padding: 48px 0 96px;
+}
+
+.skills__content {
+    position: relative;
+}
+
+.skills__title {
+    width: 80%;
+}
+
+.skills__sticker {
+    position: absolute;
+    top: 0;
+    right: -5%;
+
+    width: 20%;
+}
+
+.skills__sticker-outline {
+    fill: #abd52e;
+}
+
+.skills__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 40px;
+
+    margin-bottom: 46px;
+    padding: 0;
+
+    list-style: none;
+}
+
+.skills__card {
+    min-height: 310px;
+
+    background-color: #f1f1f1;
+    background-position: top 50% right 0;
+    background-size: cover;
+}
+
+.skills__card_bg1 {
+    background-image: url(./images/skills-card-bg1.png);
+}
+
+.skills__card_bg2 {
+    background-image: url(./images/skills-card-bg2.png);
+}
+
+.skills__card_bg3 {
+    background-image: url(./images/skills-card-bg3.png);
+}
+
+.skills__card-title {
+    width: 50%;
+}
+
+.skills__card-topic {
+    padding: 10px;
+    background-color: white;
+}
+
+/*********************** DETAILS ***********************/
+
+.details {
+    background-color: #e6e6f6;
+}
+
+.details__content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    padding-top: 60px;
+}
+
+.details__content-block {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 100px;
+}
+
+.details__content-info {
+    flex-grow: 1;
+}
+
+.details__content-title {
+    color: var(--main-highlight-color);
+    margin-bottom: 30px;
+}
+
+.details__content-text {
+    color: var(--main-color);
+}
+
+.details__content-block:nth-child(2n + 1) > .details__content-info {
+    margin-bottom: 60px;
+}
+
+.details__content-block:nth-child(2n) {
+    flex-direction: column-reverse;
+    align-items: stretch;
+}
+
+.details__content-block:nth-child(2n) > .details__image {
+    margin-bottom: 60px;
+}
+
+.details__content-block:nth-child(2n + 1):last-child {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.details__content-block:nth-child(2n + 1):last-child > .details__content-info {
+    width: 48%;
+    margin-bottom: 0;
+}
+
+.details__content-block:nth-child(2n + 1):last-child .details__content-text {
+    width: 80%;
+}
+
+.details__content-block:nth-child(2n + 1):last-child > .details__image {
+    height: 100%;
+}
+
+.details__image_mobile {
+    display: none;
+}
+
+[src="./images/Photo-2.png"] {
+    margin-bottom: -7%;
+}
+
+[src="./images/Photo-3.png"] {
+    margin-right: -9%;
+}
+
+[src="./images/Photo-4.png"] {
+    margin-left: -11%;
+}
+
+[src="./images/Photo-5.png"] {
+    margin-left: -7%;
+}
+
+/*********************** REVIEWS ***********************/
+
+.reviews {
+    margin-bottom: 80px;
+
+    border-radius: 0 0 30px 30px;
+    background-color: var(--main-color);
+}
+
+.reviews__content {
+    padding: 60px 0 80px;
+}
+
+.reviews__title {
+    margin-bottom: 40px;
+
+    color: #f4f4ff;
+    letter-spacing: -0.7px;
+}
+
+.review__items-gallery {
+    overflow: hidden;
+}
+
+.reviews__items {
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin-top: -40px;
+    margin-bottom: -40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    white-space: nowrap;
+
+    list-style: none;
+    padding-left: 0;
+    font-size: 0;
+}
+
+.reviews__item {
+    display: inline-block;
+    width: 360px;
+    margin: 0 40px 0 0;
+    padding: 30px;
+
+    background: #35256e;
+    border-radius: 30px;
+    box-sizing: border-box;
+    white-space: normal;
+    overflow-wrap: break-word;
+    font-size: 20px;
+}
+
+.reviews__item:last-child {
+    margin-right: 0;
+}
+
+.reviews__item-text {
+    margin: 0 0 40px;
+
+    line-height: 115%;
+    color: #e0dfff;
+    opacity: 0.8;
+}
+
+.reviews__item-author {
+    display: flex;
+    align-items: center;
+}
+
+.reviews__item-author-image {
+    margin-right: 20px;
+}
+
+.reviews__item-author-name {
+    margin: 0 0 5px;
+    padding: 0;
+
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+}
+
+.reviews__item-author-name:hover {
+    text-decoration: underline;
+}
+
+.reviews__item-author-course {
+    max-width: 140px;
+    margin: 0;
+    padding: 0;
+
+    font-size: 14px;
+    color: #e0dfff;
+    opacity: 0.8;
+}
+
+.reviews__navbar {
+    display: none;
+}
+
+/*********************** CONTACT-US ***********************/
+
+.contact-us__cards {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.contact-us__card {
+    width: 31%;
+    box-sizing: border-box;
+    padding: 30px;
+    padding-right: 20px;
+
+    border-radius: 30px 30px 0 0;
+}
+
+.contact-us__card_color1 {
+    background-color: var(--color-1);
+}
+
+.contact-us__card_color2 {
+    background-color: var(--color-2);
+}
+
+.contact-us__card_color3 {
+    background-color: var(--color-3);
+}
+
+.contact-us__card-title {
+    width: 80%;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.contact-us__link {
+    padding: 10px;
+    border-radius: 20px;
+
+    letter-spacing: -0.1px;
+    color: var(--main-color);
+    background-color: white;
+}
+
+.contact-us__link:hover {
+    color: white;
+    background-color: var(--main-color);
+}
+
+.contact-us__general {
+    max-width: 1280px;
+    margin: 0 -60px;
+    padding: 30px 40px 75px;
+
+    border-radius: 30px;
+    background-color: var(--main-color);
+}
+
+.contact-us__title {
+    margin-bottom: 25px;
+    color: white;
+}
+
+.contact-us__description {
+    width: 50%;
+    margin-bottom: 55px;
+
+    font-size: 26px;
+    line-height: 110%;
+    letter-spacing: -0.3px;
+    color: white;
+}
+
+.contact-us__input,
+.contact-us__button {
+    display: inline-block;
+    width: 24%;
+    box-sizing: border-box;
+
+    max-width: 265px;
+    padding: 15px;
+    border-radius: 8px;
+
+    font-size: 18px;
+}
+
+.contact-us__input {
+    margin-right: 8px;
+    border: 2px solid white;
+}
+
+.contact-us__input:focus {
+    outline: none;
+    border: 2px solid var(--color-1);
+}
+
+.contact-us__input::placeholder {
+    color: black;
+    opacity: 1;
+}
+
+.contact-us__button {
+    background-color: #d8f484;
+    border: none;
+}
+
+.contact-us__button:hover {
+    color: white;
+    background-color: #1e9c05;
+    cursor: pointer;
+}
+
+.contact-us__agreement,
+.contact-us__agreement-link {
+    font-size: 14px;
+    line-height: 145%;
+    color: white;
+}
+
+.contact-us__agreement-link {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.contact-us__agreement-link:hover {
+    border-bottom: 1px solid white;
+}
+
+/*********************** FOOTER ***********************/
+
+.footer__content {
+    padding: 100px 0;
+
+    text-align: center;
+    line-height: 135%;
+    color: #04121b;
+    opacity: 0.48;
+}
+
+.footer__text,
+.footer__copyright {
+    margin: 0;
+}
+
+/*********************** 
+ADAPTIVITY 
+***********************/
+
+@media (max-width: 1440px) {
+    /******** GENERAL ********/
+
+    .container {
+        max-width: 1050px;
+    }
+
+    /******** SKILLS ********/
+
+    .skills__list {
+        column-gap: 30px;
+        row-gap: 30px;
+    }
+
+    .skills__card {
+        min-height: 280px;
+        background-color: #f2f2f2;
+        background-position: top 50% right -10px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    /******** DETAILS ********/
+
+    .details__content-block:nth-child(2n + 1):last-child > .details__image {
+        height: auto;
+        width: 50%;
+    }
+
+    /******** REVIEWS ********/
+
+    .reviews__item {
+        width: 330px;
+        margin-right: 30px;
+    }
+
+    /******** CONTACT-US ********/
+
+    .contact-us__card {
+        width: 32%;
+        padding: 25px;
+    }
+
+    .contact-us__general {
+        margin: 0 -30px;
+    }
+}
+
+@media (max-width: 1200px) {
+    /******** GENERAL ********/
+
+    .container {
+        max-width: 900px;
+    }
+
+    /******** PROFESSIONS ********/
+
+    .professions__title {
+        width: 80%;
+        font-size: 64px;
+    }
+
+    .professions__sticker {
+        width: 25%;
+        right: -20px;
+    }
+
+    .professions__cards-list {
+        display: block;
+    }
+
+    .professions__card {
+        position: relative;
+        /* overflow: hidden; */
+        width: 100%;
+        height: 250px;
+        margin-bottom: 30px;
+
+        background-size: contain;
+        background-position-x: right;
+        background-repeat: no-repeat;
+        background-color: #fafafa;
+    }
+
+    .professions__card:last-child {
+        margin-bottom: 0;
+    }
+
+    .professions__card_bg1 {
+        background-image: url(./images/professions-card-bg1-hor.png);
+    }
+
+    .professions__card_bg2 {
+        background-image: url(./images/professions-card-bg2-hor.png);
+    }
+
+    .professions__card_bg3 {
+        background-image: url(./images/professions-card-bg3-hor.png);
+    }
+
+    /******** ISA ********/
+
+    .isa__description {
+        width: 80%;
+        margin-bottom: 46px;
+
+        font-size: 26px;
+        line-height: 125%;
+    }
+
+    .isa__sticker {
+        top: 200px;
+    }
+
+    /******** WEBINARS ********/
+
+    .webinars__item-footer {
+        display: block;
+    }
+
+    .webinars__item-details {
+        width: 75%;
+        margin-bottom: 20px;
+    }
+
+    /******** SKILLS ********/
+
+    .skills__sticker {
+        right: 0;
+    }
+
+    .skills__list {
+        display: block;
+        margin-bottom: 46px;
+    }
+
+    .skills__card {
+        min-height: 250px;
+        margin-bottom: 30px;
+
+        background-position-x: right;
+        background-size: contain;
+    }
+
+    .skills__card:last-child {
+        margin-bottom: 0;
+    }
+
+    .skills__card-title {
+        width: 100%;
+    }
+
+    /******** DETAILS ********/
+
+    .details__content-block {
+        width: 46%;
+    }
+
+    .details__content-block .block-title {
+        font-size: 36px;
+    }
+
+    .details__content-block:nth-child(2n + 1) > .details__content-info,
+    .details__content-block:nth-child(2n) > .details__image {
+        margin-bottom: 40px;
+    }
+
+    [src="./images/Photo-2.png"] {
+        margin-bottom: -10%;
+    }
+
+    [src="./images/Photo-3.png"] {
+        margin-right: -5%;
+    }
+
+    [src="./images/Photo-4.png"] {
+        margin-left: -5%;
+    }
+
+    /******** REVIEWS ********/
+
+    .reviews__content {
+        padding-bottom: 50px;
+    }
+
+    .reviews__item {
+        width: 420px;
+        margin-right: 60px;
+    }
+
+    .reviews__navbar {
+        display: flex;
+        justify-content: center;
+
+        margin-top: 30px;
+        padding: 0;
+    }
+
+    .reviews__nav-item {
+        width: 50px;
+        fill: white;
+        cursor: pointer;
+    }
+
+    .reviews__nav-item_prev {
+        margin-right: 60px;
+    }
+
+    .reviews__nav-arrow {
+        fill: var(--main-color);
+    }
+
+    .reviews__nav-item:hover {
+        fill: #35256e;
+    }
+
+    .reviews__nav-item:hover .reviews__nav-arrow {
+        fill: white;
+    }
+
+    /******** CONTACT-US ********/
+
+    .contact-us__cards {
+        display: block;
+    }
+
+    .contact-us__card {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding-right: 30px;
+
+        padding-bottom: 80px;
+        margin-bottom: -40px;
+    }
+
+    .contact-us__card-title {
+        width: auto;
+        margin-bottom: 0;
+    }
+
+    .contact-us__link {
+        min-width: 40%;
+        text-align: center;
+    }
+
+    .contact-us__general {
+        margin: 0;
+    }
+
+    .contact-us__input,
+    .contact-us__button {
+        width: 23%;
+    }
+
+    /******** FOOTER ********/
+
+    .footer__content {
+        padding: 80px 0;
+    }
+}
+
+@media (max-width: 980px) {
+    /******** GENERAL ********/
+
+    .container {
+        max-width: 580px;
+    }
+
+    .section-link {
+        font-size: 24px;
+    }
+
+    .section-title {
+        margin-bottom: 40px;
+        font-size: 48px;
+    }
+
+    .block-title[class] {
+        font-size: 32px;
+    }
+
+    .sub-title {
+        font-size: 16px;
+    }
+
+    /******** HEADER ********/
+
+    .header__menu {
+        width: 70%;
+    }
+
+    /******** PROFESSIONS ********/
+
+    .professions__header > .sub-title {
+        font-size: 20px;
+    }
+
+    .professions__title {
+        width: 100%;
+        font-size: 54px;
+    }
+
+    .professions__sticker {
+        display: none;
+    }
+
+    .professions__cards-list {
+        margin: 40px 0;
+        padding: 0;
+    }
+
+    .card {
+        height: 220px;
+        padding: 25px;
+    }
+
+    .professions__card-title {
+        width: 50%;
+    }
+
+    /******** ISA ********/
+
+    .isa__content {
+        padding: 40px 0;
+    }
+
+    .isa__title {
+        width: 80%;
+    }
+
+    .isa__title_colored {
+        display: inline;
+    }
+
+    .isa__description {
+        width: 100%;
+        margin-bottom: 30px;
+        font-size: 22px;
+    }
+
+    .isa__sticker {
+        top: 30px;
+        right: 0;
+        width: 30%;
+    }
+
+    /******** WEBINARS ********/
+
+    .webinars {
+        padding: 60px 0 30px;
+    }
+
+    .webinars__item {
+        padding: 30px;
+    }
+
+    .webinars__item_v1 {
+        display: block;
+    }
+
+    .webinars__item-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 0 48px;
+    }
+
+    .webinars__item-profession {
+        width: 40%;
+        text-align: right;
+    }
+
+    .webinars__item-title[class] {
+        margin-bottom: 30px;
+    }
+
+    .webinars__item-details {
+        font-size: 18px;
+    }
+
+    .webinars__border-circle {
+        width: 30px;
+        height: 30px;
+    }
+
+    .webinars__border-circle_top {
+        top: 80px;
+        left: -15px;
+    }
+
+    .webinars__border-circle_bottom {
+        top: 80px;
+        left: 565px;
+    }
+
+    .webinars__item_v2 {
+        margin-bottom: 30px;
+        background-image: none;
+    }
+
+    .webinars__item-link {
+        font-size: 24px;
+    }
+
+    .webinars__telegram-link {
+        display: none;
+    }
+
+    /******** SKILLS ********/
+
+    .skills {
+        padding: 30px 0 60px;
+    }
+
+    .skills__sticker {
+        top: 20px;
+        right: -10px;
+        width: 30%;
+        transform: rotateZ(320deg);
+    }
+
+    .skills__list {
+        margin-bottom: 30px;
+    }
+
+    .skills__card {
+        min-height: auto;
+    }
+
+    .card {
+        height: 220px;
+        padding: 25px;
+    }
+
+    .skills__card-title {
+        width: 80%;
+    }
+
+    /******** DETAILS ********/
+
+    .details__content {
+        display: block;
+        padding-bottom: 20px;
+    }
+
+    .details__content-block {
+        width: 100%;
+        align-items: center;
+        margin-bottom: 0;
+    }
+
+    .details__content-info,
+    .details__image {
+        margin-bottom: 40px;
+        width: 100%;
+    }
+
+    .details__content-block:nth-child(2n) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .details__content-block:nth-child(2n + 1):last-child {
+        flex-direction: column;
+    }
+
+    .details__content-block:nth-child(2n + 1):last-child > .details__content-info {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .details__content-block:nth-child(2n + 1):last-child .details__content-text {
+        width: 100%;
+    }
+
+    .details__content-block:nth-child(2n + 1):last-child > .details__image {
+        width: 100%;
+    }
+
+    .details__image_mobile {
+        display: block;
+    }
+
+    .details__image_desktop {
+        display: none;
+    }
+
+    /******** REVIEWS ********/
+
+    .reviews__content {
+        padding-top: 50px;
+    }
+
+    .reviews__item {
+        width: 100%;
+    }
+
+    .reviews__nav-item {
+        width: 45px;
+    }
+
+    /******** CONTACT-US ********/
+
+    .contact-us__card {
+        display: block;
+        padding-top: 30px;
+        padding-left: 40px;
+    }
+
+    .contact-us__card-title {
+        margin-bottom: 30px;
+    }
+
+    .contact-us__link {
+        padding: 10px 20px;
+        min-width: auto;
+    }
+
+    .contact-us__general {
+        padding-bottom: 40px;
+    }
+
+    .contact-us__description {
+        width: 100%;
+        margin-bottom: 40px;
+        font-size: 24px;
+    }
+
+    .contact-us__input,
+    .contact-us__button {
+        display: block;
+        width: 100%;
+        max-width: none;
+    }
+
+    .contact-us__input {
+        margin-right: 0;
+        margin-bottom: 10px;
+        background-color: var(--main-color);
+        color: white;
+    }
+
+    .contact-us__input::placeholder {
+        color: white;
+    }
+
+    /******** FOOTER ********/
+    .footer__content {
+        padding: 50px 0;
+    }
+}
+
+@media (max-width: 640px) {
+    /******** GENERAL ********/
+
+    .body {
+        font-size: 16px;
+    }
+
+    .container {
+        max-width: 440px;
+    }
+
+    .section-link {
+        padding: 15px 20px;
+        font-size: 22px;
+        background-color: var(--main-button-color-mobile);
+        color: black;
+    }
+
+    .section-link:hover {
+        background-color: darkgreen;
+        color: white;
+    }
+
+    .section-title {
+        margin-bottom: 40px;
+        font-size: 36px;
+    }
+
+    .block-title[class] {
+        font-size: 28px;
+    }
+
+    .sub-title {
+        font-size: 16px;
+    }
+
+    /******** HEADER ********/
+
+    .header__content {
+        position: relative;
+        width: auto;
+    }
+
+    .header__menu-checkbox-label {
+        display: block;
+        width: 40px;
+        stroke: white;
+        stroke-width: 2;
+        stroke-linecap: round;
+    }
+
+    .header__menu-checkbox-label:hover {
+        cursor: pointer;
+        stroke: var(--main-highlight-color);
+    }
+
+    .header__menu {
+        display: none;
+        width: 150px;
+        z-index: 1;
+        padding: 20px;
+        border: 2px solid var(--main-highlight-color);
+        border-radius: 10px;
+        background-color: var(--main-color);
+    }
+
+    .header__menu-checkbox:checked ~ .header__menu {
+        position: absolute;
+        display: block;
+        top: 50px;
+        right: 0;
+        /* text-align: center; */
+    }
+
+    .header__navlinks {
+        display: inline-block;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        border-bottom: 2px solid white;
+    }
+
+    /******** PROFESSIONS ********/
+
+    .professions__content {
+        padding-bottom: 0;
+        margin-bottom: -25px;
+    }
+
+    .professions__header > .sub-title {
+        width: 70%;
+        padding: 0 20px;
+    }
+
+    .professions__title {
+        width: 80%;
+        padding: 0 20px;
+        font-size: 48px;
+    }
+
+    .professions__cards-list {
+        margin: 30px 0;
+    }
+
+    .card {
+        height: 210px;
+        padding: 25px;
+        margin-bottom: 20px;
+        border-radius: 16px;
+    }
+
+    .card-topic {
+        font-size: 18px;
+        padding: 6px 10px;
+    }
+
+    /******** ISA ********/
+
+    .isa__content {
+        padding-bottom: 25px;
+    }
+
+    .isa__title {
+        width: 100%;
+    }
+
+    .isa__description {
+        width: 100%;
+        margin-bottom: 30px;
+        font-size: 22px;
+    }
+
+    .isa__sticker {
+        display: none;
+    }
+
+    .isa__content .section-link {
+        position: absolute;
+        bottom: -25px;
+    }
+
+    .block-wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    /******** WEBINARS ********/
+
+    .webinars {
+        margin-bottom: -30px;
+        padding: 80px 0;
+        background-color: var(--main-color);
+    }
+
+    .webinars__title {
+        color: white;
+    }
+
+    .webinars__item-info {
+        display: none;
+    }
+
+    .webinars__border-circle {
+        display: none;
+    }
+
+    .webinars__item {
+        border-radius: 16px;
+    }
+
+    .webinars__item_v2 {
+        margin: 0;
+    }
+
+    .webinars__item-date {
+        display: none;
+    }
+
+    .webinars__item-title[class] {
+        margin: 0 0 20px;
+    }
+
+    .webinars__item-date_mobile {
+        display: block;
+    }
+
+    .webinars__item-details {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .webinars__item-speakers {
+        display: none;
+    }
+
+    .webinars__content .section-link {
+        display: none;
+    }
+
+    /******** SKILLS ********/
+
+    .skills {
+        margin-bottom: -25px;
+        padding: 60px 0;
+        background-color: white;
+        border-radius: 0 0 16px 16px;
+    }
+
+    .skills__content {
+        position: relative;
+        padding: 0;
+    }
+
+    .skills__sticker {
+        display: none;
+    }
+
+    .skills__list {
+        margin-bottom: 0;
+    }
+
+    .skills__card-title {
+        width: 60%;
+        line-height: 100%;
+    }
+
+    .skills__content .section-link {
+        position: absolute;
+        bottom: -85px;
+    }
+
+    /******** DETAILS ********/
+
+    .details {
+        opacity: 0.99;
+        border-radius: 30px 30px 0 0;
+    }
+
+    /******** REVIEWS ********/
+
+    .reviews {
+        border-radius: 0;
+        padding-bottom: 30px;
+        margin-bottom: -30px;
+    }
+
+    .reviews__nav-item {
+        width: 40px;
+    }
+
+    .reviews__nav-item_prev {
+        margin-right: 30px;
+    }
+
+    /******** CONTACT-US ********/
+
+    .contact-us {
+        padding-top: 50px;
+        background-color: white;
+        border-radius: 20px;
+    }
+
+    .contact-us__description {
+        font-size: 22px;
+        line-height: 120%;
+        opacity: 0.8;
+    }
+}
+
+@media (max-width: 480px) {
+    /******** GENERAL ********/
+
+    .body {
+        font-size: 14px;
+    }
+
+    .container {
+        max-width: none;
+    }
+
+    .section-link {
+        padding: 10px 20px;
+        font-size: 20px;
+    }
+
+    .section-title {
+        margin-bottom: 30px;
+        font-size: 30px;
+    }
+
+    .block-title[class] {
+        font-size: 26px;
+    }
+
+    .sub-title {
+        font-size: 14px;
+    }
+
+    /******** HEADER ********/
+
+    .header__menu {
+        width: 100px;
+    }
+
+    /******** PROFESSIONS ********/
+
+    .professions__content {
+        padding-bottom: 0;
+        margin-bottom: -20px;
+    }
+
+    .professions__header > .sub-title {
+        width: 75%;
+        padding: 0 10px;
+    }
+
+    .professions__title {
+        width: 100%;
+        padding: 0 10px;
+        font-size: 40px;
+    }
+
+    .card {
+        height: 190px;
+        padding: 20px;
+    }
+
+    .card-topic {
+        font-size: 14px;
+        line-height: 100%;
+    }
+
+    /******** ISA ********/
+
+    .isa__description {
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+
+    .isa__content .section-link {
+        bottom: -20px;
+    }
+
+    /******** WEBINARS ********/
+
+    .webinars__item {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .webinars__item-link {
+        min-width: auto;
+        width: auto;
+        padding: 5px 15px;
+        font-size: 14px;
+    }
+
+    /******** SKILLS ********/
+
+    .skills__content .section-link {
+        position: absolute;
+        bottom: -80px;
+    }
+
+    /******** DETAILS ********/
+
+    .details__content-block:nth-child(2n + 1) > .details__content-info,
+    .details__content-block:nth-child(2n) > .details__image {
+        margin-bottom: 30px;
+    }
+
+    /******** CONTACT-US ********/
+
+    .contact-us__card {
+        padding-left: 30px;
+        border-radius: 16px;
+    }
+
+    .contact-us__general {
+        padding: 30px 30px 10px;
+    }
+
+    .contact-us__description {
+        font-size: 20px;
+    }
+
+    .contact-us__input {
+        border-width: 1px;
+    }
+
+    /*********************** FOOTER ***********************/
+
+    .footer__content {
+        padding: 30px 0;
+    }
+}
+
+@media (max-width: 420px) {
+    .professions__header > .sub-title {
+        width: 90%;
+    }
+}
